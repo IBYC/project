@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>携程网站</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css">       
+		<script type="text/javascript" src="js/index.js" ></script>
+		<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+		
+	</head>
+	<body onload="on()">
+			  
+		<div class="navigation" id="navigation">
+			<a href="#ad4">旅游</a>
+			<a href="#ad5">酒店</a>
+			<a href="#ad6">机票</a>
+			<a href="#ad7">用车</a>
+			<a href="#ad8">攻略</a>
+			<a href="#ad9">服务</a>
+			<a href="#footer">商旅</a>
+		</div>
+		
+		<div id="tankuang">
+			<div class="tankuang_1">
+				<p class="tankuang_p1">手机预订</p>
+				<p class="tankuang_p2">更便宜</p>
+			</div>
+			<div class="tankuang_2"><i class="fa fa-chevron-right"></i></div>
+		</div>
+		<div id="adv"><img src="img/adv.png"/></div>
+
+
+
+		<div>    <!-- body下面的一级div-->
+			<div class="top">
+				<div class="top_content">
+					<div class="top_content1">
+						<ul>
+							<li>让旅行更幸福</li>
+							<li><img src="img/earth.png" />Language</li>	
+						</ul>
+					</div>
+					<div class="top_content2">
+						<ul>
+							<li><a href="#" class="link">客服中心</a></li>
+							<li><a href="#" class="link">我的订单</a><span>|</span></li>
+							<li><a href="#" class="link">我的携程</a><span>|</span></li>
+							<li><a href="#" class="link">消息</a><span>|</span></li>
+							<li><a href="#" class="link">免费注册</a><span>|</span></li>
+							<li><a href="#" style="color: #0B9FDF;" class="link">您好，请登录</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="nav">
+				<div class="nav_content">
+					<div class="nav_content_left">
+						<img src="img/图1.png" />
+					</div>
+					<div class="nav_content_mid">
+						<form action="" method="post">
+							<input type="text" class="serch_text" placeholder="搜索旅行地/酒店/旅游/景点门票/交通">
+						</form>
+					</div>
+					<div class="nav_content_right"><p>境内：95010</p><p>（或）400-830-6666</p></div>
+				</div>
+			</div> <!--nav导航条部分结束-->
+			
+			<div class="line1">
+				<div class="line1_content">
+					<ul id="nav">
+						<li><a href="#">首页</a></li>
+						<li><a href="javascript:;">酒店</a></li>
+						<li><a href="javascript:;">旅游</a></li>
+						<li><a href="javascript:;">跟团游</a></li>
+						<li><a href="javascript:;">自由行</a></li>
+						<li><a href="javascript:;">机票</a></li>
+						<li><a href="javascript:;">火车</a></li>
+						<li><a href="javascript:;">汽车票</a></li>
+						<li><a href="javascript:;">用车</a></li>
+						<li><a href="javascript:;">门票</a></li>
+						<li><a href="javascript:;">攻略</a></li>
+						<li><a href="javascript:;">全球购</a></li>
+						<li><a href="javascript:;">礼品卡</a></li>
+						<li><a href="javascript:;">游轮</a></li>
+						<li><a href="javascript:;">目的地</a></li>
+						<li><a href="javascript:;">金融</a></li>
+						<li><a href="javascript:;">更多</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="line2">
+				<div class="line2_content">
+					<div class="line2_content1">境外直通车</div>
+					<div id="jiantou1"></div>
+					<div class="line2_content2">
+						<ul>
+							<li><a href="#"><img src="img/car.png" />海外酒店</a></li>
+							<li><a href="#"><img src="img/car.png" />国际.港澳台机票<a></li>
+							<li><a href="#"><img src="img/car.png" />境外租车</a></li>
+							<li><a href="#"><img src="img/car.png" />国际.港澳台火车票</a></li>
+							<li><a href="#"><img src="img/car.png" />处境游</a></li>
+							<li><a href="#"><img src="img/car.png" />高端游</a></li>
+							<li><a href="#"><img src="img/car.png" />出境.港澳台门票</a></li>
+							<li><a href="#"><img src="img/car.png" />签证</a></li>
+							<li><a href="#"><img src="img/car.png" />保险</a></li>
+							<li><a href="#"><img src="img/car.png" />WiFi.电话卡</a></li>
+							<li><a href="#"><img src="img/car.png" />境外接机送</a></li>
+							<!-- <li><a href="#"><img src="img/car.png" />外币兑换</a></li> -->
+						</ul>
+					</div>
+				</div>
+			</div><!--  两根横条部分结束-->
+			
+			
+			<div class="ad" >
+				<div class="table">
+
+					<div class="table1">
+						<ul id="table1_ul">
+							<li>酒店</li>
+							<li>机票</li>
+							<li>旅游</li>
+							<li>跟团游</li>
+							<li>自由行</li>
+							<li>火车</li>
+							<li>用车</li>	
+						</ul>
+					</div>
+
+					<div class="table2">
+						<div class="table2_1">
+							<ul id="tabBar">
+								<li>国内酒店<i></i><span></span></li>  <!--i是小箭头，span是小横条-->
+								<li>海外酒店<i></i><span></span></li>
+								<li>酒店团购<i></i><span></span></li>
+								<li>酒店+景点<i></i><span></span></li>
+								<li>会议.团房.长住<i></i><span></span></li>
+							</ul>
+						</div>
+						<div class="table2_2">
+							<div class="table2_2_1">
+								<form action="" method="post">
+									目的地&nbsp;&nbsp;<input type="text" class="table_search" placeholder="中文/拼音">
+								</form>	 
+							</div>  <!--第一块表单结束-->
+							<div class="table2_2_2">
+								<form action="" method="post">
+									<div class="form1">入住日期&nbsp;&nbsp;<input type="date" class="table_search1" value="2019-6-16"></div>
+								</form>	
+								<form action="" method="post">
+									<div class="form2">退房日期&nbsp;&nbsp;<input type="date" class="table_search2" value="2019-6-17"></div>
+								</form>	
+							</div>   <!--第二块表单结束-->
+							
+							<div class="clear"></div> <!--清除浮动-->
+							
+							<div class="table2_2_3">
+								<form action="" method="post">
+									<div class="form3">
+									房间数&nbsp;&nbsp;<select class="table_search3" >
+										<option>1间</option>
+										<option>2间</option>
+										<option>3间</option>
+										<option>4间</option>
+										<option>5间</option>
+									</select>
+									</div>
+								</form>	
+								<form action="" method="post">
+									<div class="form4">
+									住客数&nbsp;&nbsp;<select class="table_search4" >
+											<option>1人</option>
+											<option>2人</option>
+											<option>3人</option>
+											<option>4人</option>
+											<option>5人</option>
+										</select>
+									</div>
+								</form>	
+							</div> <!--第三块表单结束-->
+							
+							<div class="clear"></div> <!--清除浮动-->
+							
+							<div class="table2_2_4">
+								<form action="" method="post">
+									<div class="form5">
+										酒店级别&nbsp;&nbsp;<select class="table_search5" >
+												<option>不限</option>
+												<option>五星级/豪华</option>
+												<option>四星级/高档</option>
+												<option>三星级/舒适</option>
+												<option>三星级以下/经济</option>
+											</select>
+									</div>
+								</form>	
+								<form action="" method="post">
+									<div class="form6">关键词&nbsp;&nbsp;<input type="text" class="table_search6" placeholder="(选填)酒店/地标/商圈"></div>
+								</form>	
+							</div> <!--第四块表单结束-->
+							
+							<div class="clear"></div> <!--清除浮动-->
+							
+							<div class="table2_2_5">搜&nbsp;索</div>  <!--第五块表单结束-->
+								 
+						</div>
+					</div>
+				</div>
+				<img src="img/1.jpg" id="img1"/>
+			</div> <!-- 广告和表格部分结束-->
+
+			  <!--第一大部分结束-->
+
+
+			<div class="wrap">
+
+				<div class="ad4" id="ad4">
+					<div class="ad4_1">
+						<ul id="ad4_1">
+							<li>热门<i></i></li>
+							<li>特价旅游<i></i></li>
+							<li>出境游<i></i></li>
+							<li>境内游<i></i></li>
+							<li>周边游<i></i></li>
+							<li>游轮<i></i></li>
+							<li>门票<i></i></li>
+							<li>当地游<i></i></li>
+							<li>主题游<i></i></li>
+							<li>高端游<i></i></li>
+						</ul>
+					</div>					
+					<div id="father4">
+						<div class="ad4_3">
+							<div class="ad4_3_1" >
+								<ul id='ad4_3_1_ul'>
+									<li>精选</li>
+									<li>境内游</li>
+									<li>港澳台</li>
+									<li>日本</li>
+									<li>东南亚</li>
+									<li>欧洲</li>
+									<li>美洲</li>
+									<li>澳洲东非</li>
+								</ul>
+							</div>
+							<div class="clear"></div> <!--清除浮动-->
+							<div class="ad4_3_2">
+								<div class="ad4_3_2_1">
+									<div class="pic41">
+										<div class="pic41_1"><img src="img/pic1.png"/></div>	
+										<div class="pic41_2"><img src="img/pic11.png"/></div>
+									</div>
+									<div class="pic41">
+										<div class="pic41_1"><img src="img/pic1.png"/></div>	
+										<div class="pic41_2"><img src="img/pic11.png"/></div>
+									</div>
+									<div class="pic41">
+										<div class="pic41_1"><img src="img/pic1.png"/></div>	
+										<div class="pic41_2"><img src="img/pic11.png"/></div>
+									</div>
+									<div class="pic41">
+										<div class="pic41_1"><img src="img/pic1.png"/></div>	
+										<div class="pic41_2"><img src="img/pic11.png"/></div>
+									</div>
+									<div class="pic41">
+										<div class="pic41_1"><img src="img/pic1.png"/></div>	
+										<div class="pic41_2"><img src="img/pic11.png"/></div>
+									</div>
+									<div class="pic41">
+										<div class="pic41_1"><img src="img/pic1.png"/></div>	
+										<div class="pic41_2"><img src="img/pic11.png"/></div>
+									</div>
+									<div class="pic41">
+										<div class="pic41_1"><img src="img/pic1.png"/></div>	
+										<div class="pic41_2"><img src="img/pic11.png"/></div>
+									</div>
+									<div class="pic41">
+										<div class="pic41_1"><img src="img/pic1.png"/></div>	
+										<div class="pic41_2"><img src="img/pic11.png"/></div>
+									</div>
+								</div>
+								<div class="ad4_3_2_2">
+									<img src="img/pic2.png" style="width: 220px; height: 330px;float: right;cursor:pointer" />
+								</div>
+							</div>
+						</div>
+						<div class="ad4_31">
+							<div class="ad5_2">
+								<div class="ad5_2_1">
+									<div class="ad5_2_1_1">
+										<h3 class="duanluo1">促销</h3>
+										<p class="duanluo2"><a href="#">睡遍全世界——新加坡国家馆</a></p>
+										<p class="duanluo2"><a href="#">睡遍全世界——日本国家馆</a></p>
+										<p class="duanluo2"><a href="#">睡遍全世界——澳大利亚站</a></p>
+										<p class="duanluo2"><a href="#">暑期亲子游世界</a></p>
+										<p class="duanluo2"><a href="#">睡遍全世界——泰国国家馆</a></p>
+										<h3 class="duanluo1">发现酒店</h3>
+										<p class="duanluo2"><a href="#">波兰波斯坦克酒店推荐</a></p>
+										<p class="duanluo2"><a href="#">摩洛哥菲斯民宿旅游推荐</a></p>
+										<p class="duanluo2"><a href="#">巴拿马酒店推荐</a></p>
+										<p class="duanluo2"><a href="#">约旦安曼酒店推荐</a></p>
+									</div>
+								</div>
+								<div class="ad5_2_2">
+									<div class="ad5_2_2_1" >
+										<ul id='ad5_2_1_1_ul'>
+											<li>热门城市</li>
+											<li>都市购物</li>
+											<li>海岛休闲</li>
+											<li>旅游胜地</li>
+										</ul>
+									</div>
+									<div class="clear"></div> 
+									<div class="ad5_2_2_2">
+										<div class="ad5_2_2_2_1">
+											<div class="pic5"><img src="img/pic3.png"/></div>
+											<div class="pic5"><img src="img/pic3.png"/></div>
+											<div class="pic5"><img src="img/pic3.png"/></div>
+											<div class="pic5"><img src="img/pic3.png"/></div>
+											<div class="pic5"><img src="img/pic3.png"/></div>
+											<div class="pic5"><img src="img/pic3.png"/></div>
+										</div>
+										<div class="ad5_2_2_2_2">
+											<img src="img/pic2.png" style="width: 220px; height: 330px;float: right;cursor:pointer" />
+										</div>
+									</div>
+								</div>  
+							</div>
+						</div>
+						<div class="ad4_32">
+							<div class="ad4_3_1" >
+									<ul id='ad4_3_1_ul'>
+										<li>精选</li>
+										<li>境内游</li>
+										<li>港澳台</li>
+										<li>日本</li>
+										<li>东南亚</li>
+										<li>欧洲</li>
+										<li>美洲</li>
+										<li>澳洲东非</li>
+									</ul>
+							</div>
+							<div class="clear"></div> <!--清除浮动-->
+							<div class="ad4_3_2">
+								<div class="ad4_3_2_1">
+									<div class="pic4"><img src="img/pic1.png"/></div>
+									<div class="pic4"><img src="img/pic1.png"/></div>
+									<div class="pic4"><img src="img/pic1.png"/></div>
+									<div class="pic4"><img src="img/pic1.png"/></div>
+									<div class="pic4"><img src="img/pic1.png"/></div>
+									<div class="pic4"><img src="img/pic1.png"/></div>
+									<div class="pic4"><img src="img/pic1.png"/></div>
+									<div class="pic4"><img src="img/pic1.png"/></div>
+								</div>
+								<div class="ad4_3_2_2">
+									<img src="img/pic2.png" style="width: 220px; height: 330px;float: right;cursor:pointer" />
+								</div>
+							</div>
+						</div>
+						<div class="ad4_33">
+								<div class="ad5_2">
+										<div class="ad5_2_1">
+											<div class="ad5_2_1_1">
+												<h3 class="duanluo1">促销</h3>
+												<p class="duanluo2"><a href="#">睡遍全世界——新加坡国家馆</a></p>
+												<p class="duanluo2"><a href="#">睡遍全世界——日本国家馆</a></p>
+												<p class="duanluo2"><a href="#">睡遍全世界——澳大利亚站</a></p>
+												<p class="duanluo2"><a href="#">暑期亲子游世界</a></p>
+												<p class="duanluo2"><a href="#">睡遍全世界——泰国国家馆</a></p>
+												<h3 class="duanluo1">发现酒店</h3>
+												<p class="duanluo2"><a href="#">波兰波斯坦克酒店推荐</a></p>
+												<p class="duanluo2"><a href="#">摩洛哥菲斯民宿旅游推荐</a></p>
+												<p class="duanluo2"><a href="#">巴拿马酒店推荐</a></p>
+												<p class="duanluo2"><a href="#">约旦安曼酒店推荐</a></p>
+											</div>
+										</div>
+										<div class="ad5_2_2">
+											<div class="ad5_2_2_1" >
+												<ul id='ad5_2_1_1_ul'>
+													<li>热门城市</li>
+													<li>都市购物</li>
+													<li>海岛休闲</li>
+													<li>旅游胜地</li>
+												</ul>
+											</div>
+											<div class="clear"></div> 
+											<div class="ad5_2_2_2">
+												<div class="ad5_2_2_2_1">
+													<div class="pic5"><img src="img/pic3.png"/></div>
+													<div class="pic5"><img src="img/pic3.png"/></div>
+													<div class="pic5"><img src="img/pic3.png"/></div>
+													<div class="pic5"><img src="img/pic3.png"/></div>
+													<div class="pic5"><img src="img/pic3.png"/></div>
+													<div class="pic5"><img src="img/pic3.png"/></div>
+												</div>
+												<div class="ad5_2_2_2_2">
+													<img src="img/pic2.png" style="width: 220px; height: 330px;float: right;cursor:pointer" />
+												</div>
+											</div>
+										</div>  
+									</div>
+						</div>
+					</div>
+				</div> <!-- 模块4结束-->
+
+
+
+				<div class="ad5" id="ad5" >
+
+					<div class="ad5_1">
+						<ul id="ad5_1">
+							<li>海外酒店<i></i></li>
+							<li>海外民宿+短租<i></i></li>
+							<li>国内酒店<i></i></li>
+							<li>酒店+景点<i></i></li>
+							<li>客栈民宿<i></i></li>
+							<li>团购<i></i></li>
+						</ul>
+					</div>	
+
+					<div class="ad5_2">
+						<div class="ad5_2_1">
+							<div class="ad5_2_1_1">
+								<h3 class="duanluo1">促销</h3>
+								<p class="duanluo2"><a href="#">睡遍全世界——新加坡国家馆</a></p>
+								<p class="duanluo2"><a href="#">睡遍全世界——日本国家馆</a></p>
+								<p class="duanluo2"><a href="#">睡遍全世界——澳大利亚站</a></p>
+								<p class="duanluo2"><a href="#">暑期亲子游世界</a></p>
+								<p class="duanluo2"><a href="#">睡遍全世界——泰国国家馆</a></p>
+								<h3 class="duanluo1">发现酒店</h3>
+								<p class="duanluo2"><a href="#">波兰波斯坦克酒店推荐</a></p>
+								<p class="duanluo2"><a href="#">摩洛哥菲斯民宿旅游推荐</a></p>
+								<p class="duanluo2"><a href="#">巴拿马酒店推荐</a></p>
+								<p class="duanluo2"><a href="#">约旦安曼酒店推荐</a></p>
+							</div>
+						</div>
+						<div class="ad5_2_2">
+							<div class="ad5_2_2_1" >
+								<ul id='ad5_2_1_1_ul'>
+									<li>热门城市</li>
+									<li>都市购物</li>
+									<li>海岛休闲</li>
+									<li>旅游胜地</li>
+								</ul>
+							</div>
+							<div class="clear"></div> 
+							<div class="ad5_2_2_2">
+								<div class="ad5_2_2_2_1">
+									<div class="pic5"><img src="img/pic3.png"/></div>
+									<div class="pic5"><img src="img/pic3.png"/></div>
+									<div class="pic5"><img src="img/pic3.png"/></div>
+									<div class="pic5"><img src="img/pic3.png"/></div>
+									<div class="pic5"><img src="img/pic3.png"/></div>
+									<div class="pic5"><img src="img/pic3.png"/></div>
+								</div>
+								<div class="ad5_2_2_2_2">
+									<img src="img/pic2.png" style="width: 220px; height: 330px;float: right;cursor:pointer" />
+								</div>
+							</div>
+					  </div>  
+					</div>
+
+				</div> <!-- 模块5结束-->
+
+
+				<div class="ad6" id="ad6">
+						<div class="ad6_1">
+							<ul id="ad6_1">
+								<li>国际.港澳台特价机票<i></i></li>
+								<li>国内特价机票<i></i></li>
+							</ul>
+
+						</div>					
+
+						<div id="father6">
+							<div class="ad6_3">
+								<div class="ad6_3_1" >
+									<div class="ad6_3_11">
+										<ul id='ad6_3_1_ul'>
+											<li>热门往返</li>
+											<li>亚洲</li>
+											<li>欧洲</li>
+											<li>美洲</li>
+											<li>非洲</li>
+										</ul>
+									</div>
+									<div class="xiaofangkuang"> <a href="https://flights.ctrip.com/international/#ctm_ref=Iflt_hp_hot_ad_i">更多国际港澳台.特价机票 ></a></div>
+								</div>
+								<div class="clear"></div> <!--清除浮动-->
+								<div class="ad6_3_2">
+									<div class="ad6_3_2_1">
+										<div class="pic6">
+											<p class="pic6_p1">上海<i class="fa fa-arrows-h fa-fw"></i>伦敦</p>
+											<p class="pic6_p2">6月20日 - 7月02日</p>
+											<div class="pic6_div">
+												<div class="pic6_div01">¥</div><div class="pic6_div1">505</div><div class="pic6_div02">起</div>
+												<div class="pic6_div2">立抢</div>
+											</div>				
+										</div>
+										<div class="pic6">
+											<p class="pic6_p1">上海<i class="fa fa-arrows-h fa-fw"></i>伦敦</p>
+											<p class="pic6_p2">6月20日 - 7月02日</p>
+											<div class="pic6_div">
+												<div class="pic6_div01">¥</div><div class="pic6_div1">505</div><div class="pic6_div02">起</div>
+												<div class="pic6_div2">立抢</div>
+											</div>				
+										</div>
+										<div class="pic6">
+											<p class="pic6_p1">上海<i class="fa fa-arrows-h fa-fw"></i>伦敦</p>
+											<p class="pic6_p2">6月20日 - 7月02日</p>
+											<div class="pic6_div">
+												<div class="pic6_div01">¥</div><div class="pic6_div1">505</div><div class="pic6_div02">起</div>
+												<div class="pic6_div2">立抢</div>
+											</div>				
+										</div>	
+										<div class="pic6">
+											<p class="pic6_p1">上海<i class="fa fa-arrows-h fa-fw"></i>伦敦</p>
+											<p class="pic6_p2">6月20日 - 7月02日</p>
+											<div class="pic6_div">
+												<div class="pic6_div01">¥</div><div class="pic6_div1">505</div><div class="pic6_div02">起</div>
+												<div class="pic6_div2">立抢</div>
+											</div>				
+										</div>
+										<div class="pic6">
+											<p class="pic6_p1">上海<i class="fa fa-arrows-h fa-fw"></i>伦敦</p>
+											<p class="pic6_p2">6月20日 - 7月02日</p>
+											<div class="pic6_div">
+												<div class="pic6_div01">¥</div><div class="pic6_div1">505</div><div class="pic6_div02">起</div>
+												<div class="pic6_div2">立抢</div>
+											</div>				
+										</div>
+										<div class="pic6">
+											<p class="pic6_p1">上海<i class="fa fa-arrows-h fa-fw"></i>伦敦</p>
+											<p class="pic6_p2">6月20日 - 7月02日</p>
+											<div class="pic6_div">
+												<div class="pic6_div01">¥</div><div class="pic6_div1">505</div><div class="pic6_div02">起</div>
+												<div class="pic6_div2">立抢</div>
+											</div>				
+										</div>
+										<div class="pic6">
+											<p class="pic6_p1">上海<i class="fa fa-arrows-h fa-fw"></i>伦敦</p>
+											<p class="pic6_p2">6月20日 - 7月02日</p>
+											<div class="pic6_div">
+												<div class="pic6_div01">¥</div><div class="pic6_div1">505</div><div class="pic6_div02">起</div>
+												<div class="pic6_div2">立抢</div>
+											</div>				
+										</div>
+										<div class="pic6">
+											<p class="pic6_p1">上海<i class="fa fa-arrows-h fa-fw"></i>伦敦</p>
+											<p class="pic6_p2">6月20日 - 7月02日</p>
+											<div class="pic6_div">
+												<div class="pic6_div01">¥</div><div class="pic6_div1">505</div><div class="pic6_div02">起</div>
+												<div class="pic6_div2">立抢</div>
+											</div>				
+										</div>
+										<div class="pic6">
+											<p class="pic6_p1">上海<i class="fa fa-arrows-h fa-fw"></i>伦敦</p>
+											<p class="pic6_p2">6月20日 - 7月02日</p>
+											<div class="pic6_div">
+												<div class="pic6_div01">¥</div><div class="pic6_div1">505</div><div class="pic6_div02">起</div>
+												<div class="pic6_div2">立抢</div>
+											</div>				
+										</div>
+										<div class="pic6">
+											<p class="pic6_p1">上海<i class="fa fa-arrows-h fa-fw"></i>伦敦</p>
+											<p class="pic6_p2">6月20日 - 7月02日</p>
+											<div class="pic6_div">
+												<div class="pic6_div01">¥</div><div class="pic6_div1">505</div><div class="pic6_div02">起</div>
+												<div class="pic6_div2">立抢</div>
+											</div>				
+										</div>
+										<div class="pic6">
+											<p class="pic6_p1">上海<i class="fa fa-arrows-h fa-fw"></i>伦敦</p>
+											<p class="pic6_p2">6月20日 - 7月02日</p>
+											<div class="pic6_div">
+												<div class="pic6_div01">¥</div><div class="pic6_div1">505</div><div class="pic6_div02">起</div>
+												<div class="pic6_div2">立抢</div>
+											</div>				
+										</div>
+										<div class="pic6">
+											<p class="pic6_p1">上海<i class="fa fa-arrows-h fa-fw"></i>伦敦</p>
+											<p class="pic6_p2">6月20日 - 7月02日</p>
+											<div class="pic6_div">
+												<div class="pic6_div01">¥</div><div class="pic6_div1">505</div><div class="pic6_div02">起</div>
+												<div class="pic6_div2">立抢</div>
+											</div>				
+										</div>
+
+									</div>
+									<div class="ad6_3_2_2">
+										<img src="img/pic6.png" style="width: 218px; height: 337px;float: right;cursor:pointer" />
+									</div>
+								</div>
+							</div>
+							<div class="ad4_31">
+									<div class="ad5_2">
+										<div class="ad5_2_1">
+											<div class="ad5_2_1_1">
+												<h3 class="duanluo1">促销</h3>
+												<p class="duanluo2"><a href="#">睡遍全世界——新加坡国家馆</a></p>
+												<p class="duanluo2"><a href="#">睡遍全世界——日本国家馆</a></p>
+												<p class="duanluo2"><a href="#">睡遍全世界——澳大利亚站</a></p>
+												<p class="duanluo2"><a href="#">暑期亲子游世界</a></p>
+												<p class="duanluo2"><a href="#">睡遍全世界——泰国国家馆</a></p>
+												<h3 class="duanluo1">发现酒店</h3>
+												<p class="duanluo2"><a href="#">波兰波斯坦克酒店推荐</a></p>
+												<p class="duanluo2"><a href="#">摩洛哥菲斯民宿旅游推荐</a></p>
+												<p class="duanluo2"><a href="#">巴拿马酒店推荐</a></p>
+												<p class="duanluo2"><a href="#">约旦安曼酒店推荐</a></p>
+											</div>
+										</div>
+										<div class="ad5_2_2">
+											<div class="ad5_2_2_1" >
+												<ul id='ad5_2_1_1_ul'>
+													<li>热门城市</li>
+													<li>都市购物</li>
+													<li>海岛休闲</li>
+													<li>旅游胜地</li>
+												</ul>
+											</div>
+											<div class="clear"></div> 
+											<div class="ad5_2_2_2">
+												<div class="ad5_2_2_2_1">
+													<div class="pic5"><img src="img/pic3.png"/></div>
+													<div class="pic5"><img src="img/pic3.png"/></div>
+													<div class="pic5"><img src="img/pic3.png"/></div>
+													<div class="pic5"><img src="img/pic3.png"/></div>
+													<div class="pic5"><img src="img/pic3.png"/></div>
+													<div class="pic5"><img src="img/pic3.png"/></div>
+												</div>
+												<div class="ad5_2_2_2_2">
+													<img src="img/pic2.png" style="width: 220px; height: 330px;float: right;cursor:pointer" />
+												</div>
+											</div>
+										</div>  
+									</div>
+							</div>
+						</div>
+					</div> <!-- 模块6结束-->
+
+
+
+					<div class="ad7" id="ad7" >
+
+						<div class="ad7_1">
+							<ul id="ad7_1">
+								<li>境外租车<i></i></li>
+								<li>境外接送机<i></i></li>
+								<li>国内租车<i></i></li>
+								<li>国内接送机<i></i></li>
+								<li>日租包车<i></i></li>
+							</ul>
+						</div>	
+	
+						<div class="ad7_2">
+
+							<div class="ad7_2_1">
+								<h3 class="duanluo3">热门城市</h3>
+								<div class="duanluo4">
+									<ul class="duanluo41">
+										<li><a href="#">洛杉矶</a></li>
+										<li><a href="#">旧金山</a></li>
+										<li><a href="#">墨尔本</a></li>
+									</ul>
+								</div>
+								<div class="duanluo4">
+									<ul class="duanluo41">
+										<li><a href="#">纽约</a></li>
+										<li><a href="#">曼谷</a></li>
+										<li><a href="#">基督城</a></li>
+									</ul>
+								</div>
+								<div class="duanluo4">
+									<ul class="duanluo41">
+										<li><a href="#">普吉岛</a></li>
+										<li><a href="#">温哥华</a></li>
+										<li><a href="#">悉尼</a></li>
+									</ul>
+								</div>
+								<div class="duanluo4">
+									<ul class="duanluo41">
+										<li><a href="#">奥克兰</a></li>
+										<li><a href="#">拉斯维加斯</a></li>
+										<li><a href="#">西雅图</a></li>
+									</ul>
+								</div>
+								<div class="duanluo4">
+									<ul class="duanluo41">
+										<li><a href="#">伦敦</a></li>
+										<li><a href="#">法兰克福</a></li>
+										<li><a href="#">多伦多</a></li>
+									</ul>
+								</div>
+								<div class="duanluo4">
+									<ul class="duanluo41">
+										<li><a href="#">巴黎</a></li>
+										<li><a href="#">迪拜</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="ad7_2_2">
+								<div class="ad7_2_2_1" >
+									<ul id='ad7_2_1_1_ul'>
+										<li>小型轿车</li>
+										<li>中型轿车</li>
+										<li>大型轿车</li>
+										<li>高档轿车</li>
+										<li>高档轿车</li>
+										<li>中型SUV</li>
+										<li>标准SUV</li>
+										<li>全尺寸SUV</li>
+										<li>更多</li>
+									</ul>
+									<div class="xiaofangkuang"> <a href="https://car.ctrip.com/hwzijia?channelID=16022#ctm_ref=ssc_hp_car_sni_more_1">更多境外租车 ></a></div>
+								</div>
+								<div class="clear"></div> 
+								<div class="ad7_2_2_2">
+									<div class="cardiv">
+										<img src="img/smallcar.png" style="width: 200px;margin-left: 10px;margin-bottom: 10px"/>
+										<p>新西兰 惠灵顿</p>
+										<div class="pic7_div">
+											<div class="pic7_div1">北岛环线毛利风情</div>
+											<div class="pic7_div22">起</div><div class="pic7_div2">95</div><div class="pic7_div21">¥</div>
+										</div>
+									</div>
+									<div class="cardiv">
+										<img src="img/smallcar1.png" style="height: 145px;margin-left: 12px"/>
+										<p>加拿大 温哥华</p>
+										<div class="pic7_div">
+											<div class="pic7_div1">环游如画温哥华岛</div>
+											<div class="pic7_div22">起</div><div class="pic7_div2">225</div><div class="pic7_div21">¥</div>
+										</div>
+									</div>
+									<div class="cardiv">
+										<img src="img/smallcar.png" style="width: 200px;margin-left: 10px;margin-bottom: 10px"/>
+										<p>新西兰 惠灵顿</p>
+										<div class="pic7_div">
+											<div class="pic7_div1">北岛环线毛利风情</div>
+											<div class="pic7_div22">起</div><div class="pic7_div2">95</div><div class="pic7_div21">¥</div>
+										</div>
+									</div>
+									<div class="cardiv">
+										<img src="img/smallcar1.png" style="height: 145px;margin-left: 12px"/>
+										<p>加拿大 温哥华</p>
+										<div class="pic7_div">
+											<div class="pic7_div1">环游如画温哥华岛</div>
+											<div class="pic7_div22">起</div><div class="pic7_div2">225</div><div class="pic7_div21">¥</div>
+										</div>
+									</div>
+
+								</div>
+							</div>  							
+						</div>
+	
+					</div> <!-- 模块7结束-->
+				
+
+					<div class="ad8" id="ad8">
+
+						<div class="ad8_1">
+							<ul id="ad8_1">
+								<li>目的地攻略<i></i></li>
+								<li>旅游旗舰店<i></i></li>
+							</ul>
+						</div>	
+	
+						<div class="ad8_2">
+							<div class="ad8_2_1">
+								<div class="ad8_2_1_1">
+									<h3 class="duanluo1">当季推荐</h3>
+									<p class="duanluo2"><a href="#">圣托里尼：永恒的蓝白世界</a></p>
+									<p class="duanluo2"><a href="#">哥本哈根：走进安徒生的童话世界</a></p>
+									<p class="duanluo2"><a href="#">圣彼得堡：风光旖旎的北方威尼斯</a></p>
+									<p class="duanluo2"><a href="#">清迈：文艺清新的泰北明珠</a></p>
+									<p class="duanluo2"><a href="#">柏林：啤酒相约猪肘</a></p>
+								</div>
+							</div>
+
+							<div class="ad8_2_2">
+								<div class="ad8_2_2_1" >
+									<ul id='ad8_2_1_1_ul'>
+										<li>氢气球专栏</li>
+										<li>旅行正当时</li>
+										<li>看海悠悠乐</li>
+										<li>教你买买买</li>
+									</ul>
+								</div>
+								<div class="clear"></div> 
+								<div class="ad8_2_2_2">
+									<div class="ad8_2_2_2_1">
+										<div class="pic8"><img src="img/pic3.png"/></div>
+										<div class="pic8"><img src="img/pic3.png"/></div>
+										<div class="pic8"><img src="img/pic3.png"/></div>
+										<div class="pic8"><img src="img/pic3.png"/></div>
+									</div>
+								</div>
+						  </div>  
+						</div>
+	
+					</div> <!-- 模块8结束-->
+	
+					<div class="ad9" id="ad9">
+						<div class="ad9_1">旅行服务<i></i></div>
+						<div class="ad9_2">
+							<div class="ad9_2_1">
+								<div class="ad9_2_1_1">
+									<div class="pic9"><img src="img/wifi.png"/></div>
+									<div class="duanluo9">
+										<p>出境WiFi</p>
+										<p>全球出境WiFi租赁</p>
+										<p>流量不限、多人共享、携带便捷、低价信号强</p>
+									</div>
+								</div>
+								<div class="ad9_2_1_2">
+									<ul id="ad9_2_1_2_ul">
+										<li><img src="img/supply_icon.png"/> 日本</li>
+										<li><img src="img/supply_icon.png"/> 韩国</li>
+										<li><img src="img/supply_icon.png"/> 欧洲通用</li>
+										<li><img src="img/supply_icon.png"/> 更多</li>
+									</ul>
+								</div>
+							</div>
+							<div class="ad9_2_1">
+								<div class="ad9_2_1_1">
+									<div class="pic9"><img src="img/bigearth.png"/></div>
+									<div class="duanluo9">
+										<p>签证</p>
+										<p>在材料制作完成前均可申请订单全额退款</p>
+										<p>服务优质，方便快捷，诚信可靠，出签率高</p>
+									</div>
+								</div>
+								<div class="ad9_2_1_2">
+									<ul id="ad9_2_1_2_ul">
+										<li><img src="img/24-japan.png" style="border-radius: 15px"/> 日本</li>
+										<li><img src="img/24-korea.png" style="border-radius: 15px"/> 韩国</li>
+										<li><img src="img/24-USA.png" style="border-radius: 15px"/> 美国</li>
+										<li><img src="img/24-Australia.png" style="border-radius: 15px"/> 澳大利亚</li>
+									</ul>
+								</div>
+							</div>
+							<div class="ad9_2_1">
+								<div class="ad9_2_1_1">
+									<div class="pic9"><img src="img/insurance.png"/></div>
+									<div class="duanluo9">
+										<p>保险</p>
+										<p>携程保险，安心随行</p>
+										<p>旅游定制、极速出保、便捷理赔</p>
+									</div>
+								</div>
+								<div class="ad9_2_1_2" id="ad9_2_1_2">
+									<ul id="ad9_2_1_2_ul">
+										<li><img src="img/1.png"/>【申根之王】</li>
+										<li><img src="img/1.png"/>【亚洲优选】</li>
+										<li><img src="img/1.png"/>【境内畅游】</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			 <!-- 第二大部分的包裹结束-->
+
+
+			<div class="footer" id="footer">
+				<div class="footer_1">
+					<div class="footer_first">
+						<div class="footer_duanluo1">为什么选择携程</div>
+						<div class="footer_duanluo2">
+							<img src="img/heart.png" style="float: left"/>
+							<div style="float: left">
+								<p class="p1">放心的服务</p>
+								<p class="p2">领先的服务标准 独创的保障体系</p>
+								<p class="p3">放心的价格</p>
+								<p class="p4">具竞争力的价格 无任何隐形费用</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer_duanluo">
+						<div class="footer_duanluo3">旅游资讯</div>
+						<div class="footer_duanluo4">
+							<div class="footer_duanluo41">
+								<ul>
+									<li>宾馆索引</li>
+									<li>机票索引</li>
+									<li>旅游索引</li>
+									<li>邮轮索引</li>
+									<li>用车索引</li>
+								</ul>
+							</div>
+							<div class="footer_duanluo42">
+								<li>攻略索引</li>
+								<li>网站导航</li>
+								<li>火车票索引</li>
+								<li>企业差旅索引</li>
+							</div>
+						</div>
+					</div>
+					<div class="footer_duanluo">
+						<div class="footer_duanluo3">加盟合作</div>
+						<div class="footer_duanluo4">
+							<div class="footer_duanluo41">
+								<ul>
+									<li>分销联盟</li>
+									<li>广告业务</li>
+									<li>保险代理</li>
+									<li>酒店加盟</li>
+									<li>智慧旅游</li>
+								</ul>
+							</div>
+							<div class="footer_duanluo42">
+								<li>友情链接</li>
+								<li>企业礼品卡采购</li>
+								<li>代理合作</li>
+								<li>目的地及景区合作</li>
+								<li>更多加盟合作</li>
+							</div>
+						</div>
+					</div>
+					<div class="footer_duanluo">
+						<div class="footer_duanluo3">关于携程</div>
+						<div class="footer_duanluo4">
+							<div class="footer_duanluo41">
+								<ul>
+									<li>关于携程</li>
+									<li>联系我们</li>
+									<li>旅游度假资质</li>
+									<li>用户协议</li>
+									<li>营业执照</li>
+									<li>携程信用卡</li>
+								</ul>
+							</div>
+							<div class="footer_duanluo42">
+								<li>携程热点</li>
+								<li>诚聘英才</li>
+								<li>企业公民</li>
+								<li>隐私政策</li>
+								<li>安全中心</li>
+							</div>
+						</div>
+					</div>
+					<div class="footer_duanluo">
+						<div class="footer_duanluo31">微信公众号</div>
+						<img src="img/gongzhonghao.png"/>
+					</div>
+				</div>
+				<div class="footer_2"> 
+					<div class="footer_21">Copyright©1999-2019, ctrip.com. All rights reserved. | ICP证：沪B2-20050130</div>
+					<div class="footer_21"><img src="img/huizhang.png" style="vertical-align: middle"/>沪公网备31010502002731号</div>
+					<div class="footer_21">违法和不良信息举报电话021-22500846丨上海市反电信网络诈骗中心联系电话962110丨上海市旅游网站落实诚信建设主体责任承诺书</div>
+					<div class="footer_21"><img src="img/footer.png"/></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
